@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('./DMSans-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'myFontReg';
+src: url('./DMSans-Regular.ttf') format('truetype');
+font-weight: 600;
+font-style: normal;
+}
+html{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70vw;
+    gap:5rem;
+    padding-top: 15rem;
+    line-height: 1;
+    padding-bottom: 15rem;
+    grid-template-rows: auto;
+
+}
+
+h1{
+    font-size: 7rem;
+    font-family: 'myFont';
+}
+
+h2{
+    font-size: 4rem;
+    font-family: 'myFontReg' ;
+}
+h5{
+    font-family: "myFontReg";
+}
+h6{
+    font-family: 'myFont';
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: "myFontReg";
+}
+
+.bold_p{
+    margin-top: 0.5rem;
+    font-family: 'myFont';
+}
+.tabs{
+    background-color: rgb(255, 255, 255);
+    min-width: 30rem;
+    max-width: 50rem;
+    border-style: solid;
+    border-color: black;
+    max-height: fit-content;
+    height: 100%;
+}
+
+.tabs_nav{
+    display: flex;
+    width: 16.6rem;
+    height: 5rem;
+    border-bottom-style:solid ;
+    border-color: black ;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+    transition: all 0.3s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.tabs_nav:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.tabs_nav_click{
+    background-color: black;
+    color: white;
+}
+.nav_con{
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.tabs2{
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+
+.tabBody{   
+    font-size: 4rem;
+    padding: 3rem 3rem;
+    font-family: "myFont";
+    text-align:left;
+    height: 100%;
+}
+
+.introtext{
+    margin-top: 2rem;
+    width: 45rem;
+}
+
+img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
