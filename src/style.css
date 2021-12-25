@@ -14,7 +14,6 @@ html{
     font-size: 62.5%;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 *{
     padding: 0;
@@ -24,7 +23,7 @@ html{
 
 body{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     justify-content: center;
 }
@@ -77,6 +76,9 @@ p{
     border-color: black;
     max-height: fit-content;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .tabs_nav{
@@ -134,4 +136,19 @@ img{
     margin-top: 3rem;
     margin-bottom: 3rem;
     opacity: 0.8;
+}
+
+.menu_food{
+    margin-bottom: 0;
+}
+
+.menus{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.location{
+    margin-top: 3rem;
 }
